@@ -2,7 +2,7 @@
 
 This repository contains the implementation of the **Ensemble SMC² (eSMC²)** algorithm for Bayesian inference in state-space epidemiological models, as described in our paper:
 
-> "Accelerated Bayesian inference for state-space epidemiological models with Ensemble SMC²"
+"Accelerated Bayesian inference for state-space epidemiological models with Ensemble SMC²"
 
 ---
 
@@ -18,5 +18,5 @@ This repository contains the implementation of the **Ensemble SMC² (eSMC²)** a
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-org-or-username>/eSMC2-EpidemicInference.git
-cd eSMC2-EpidemicInference
+git clone https://github.com/Dhorasso/eSMC2_Epidemic_Inference.git
+cd eSMC2_Epidemic_Inference
