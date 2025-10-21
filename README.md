@@ -19,4 +19,4 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Dhorasso/eSMC2_Epi_Inference.git
-cd eSMC2_Epidemic_Inference
+cd eSMC2_Epi_Inference
