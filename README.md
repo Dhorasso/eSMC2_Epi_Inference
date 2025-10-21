@@ -18,5 +18,5 @@ This repository contains the implementation of the **Ensemble SMC² (eSMC²)** a
 Clone the repository:
 
 ```bash
-git clone https://github.com/Dhorasso/eSMC2_Epidemic_Inference.git
+git clone https://github.com/Dhorasso/eSMC2_Epi_Inference.git
 cd eSMC2_Epidemic_Inference
