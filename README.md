@@ -208,7 +208,7 @@ plt.tight_layout()
 plt.show()
 ```
 <p>
-  <img src="Fig/sim_state1.png"  alt="Posterior estimates of incidence, transmission rate, and Rₜ" width="900"> 
+  <img src="Fig/sim_state1.png"  alt="Posterior estimates of incidence, transmission rate, and Rₜ" width="1200"> 
 </p>
 
 
