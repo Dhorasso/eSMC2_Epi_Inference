@@ -84,6 +84,8 @@ plt.show()
 <p>
   <img src="Fig/sim_data1.png" alt="Plot showing the simulated data" width="700">
 </p>
+
+
 #####  Run the eSMC²
 
 ```python
