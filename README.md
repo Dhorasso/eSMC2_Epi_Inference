@@ -82,7 +82,7 @@ plt.show()
 ```
 
 <p>
-  <img src="Fig/sim_data1.png" alt="Plot showing the results" width="600" />
+  <img src="Fig/sim_data1.png" alt="Plot showing the results" width="1200" />
 </p>
 #####  Run the eSMC²
 
@@ -208,7 +208,7 @@ plt.tight_layout()
 plt.show()
 ```
 <p>
-  <img src="Fig/sim_state1.png" alt="Plot showing the results" width="600" />
+  <img src="Fig/sim_state1.png" alt="Plot showing the results" width="1200" />
 </p>
 
 
@@ -308,7 +308,7 @@ plt.tight_layout(h_pad=2, rect=[0, 0.1, 1, 1])
 plt.show()
 ```
 <p>
-  <img src="Fig/sim_param1.png" alt="Plot showing the results" width="600" />
+  <img src="Fig/sim_param1.png" alt="Plot showing the results" width="1200" />
 </p>
 
 
