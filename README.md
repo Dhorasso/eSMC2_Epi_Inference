@@ -36,7 +36,8 @@ cd eSMC2_Epi_Inference
 import numpy as np
 import pandas as pd
 from scipy.stats import truncnorm, uniform, norm
-from smc2 import ESMC_squared  
+from smc2 import ESMC_squared
+import matplotlib.pyplot as plt
 ```
 ##### Load your data
 
