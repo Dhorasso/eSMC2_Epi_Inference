@@ -82,7 +82,7 @@ plt.show()
 ```
 
 <p>
-  <img src="Fig/sim_data1.png" alt="Plot showing the simulated data" width="900">
+  <img src="Fig/sim_data1.png" alt="Plot showing the simulated data" width="600">
 </p>
 #####  Run the eSMC²
 
@@ -308,7 +308,7 @@ plt.tight_layout(h_pad=2, rect=[0, 0.1, 1, 1])
 plt.show()
 ```
 <p>
-  <img src="Fig/sim_param1.png" alt="Posterior estimates of parameters" width="900"> 
+  <img src="Fig/sim_param1.png" alt="Posterior estimates of parameters" width="1200"> 
 </p>
 
 
