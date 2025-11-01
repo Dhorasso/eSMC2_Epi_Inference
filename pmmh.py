@@ -149,14 +149,14 @@ def log_prior(initial_theta_info, theta):
 
         if transf == 'log':
             theta_original = np.exp(value)
-            # jacobian_adjustment = value
+            jacobian_adjustment = value
         elif transf == 'logit':
             theta_original = 1 / (1 + np.exp(-value))
-            # jacobian_adjustment = np.log(theta_original) + np.log(1 - theta_original)
+            jacobian_adjustment = np.log(theta_original) + np.log(1 - theta_original)
         else:
             theta_original = value
 
         log_prior_val = dist.logpdf(theta_original)
-        total_log_prior += log_prior_val  # + jacobian_adjustment
+        total_log_prior += log_prior_val   + jacobian_adjustment
 
     return total_log_prior
