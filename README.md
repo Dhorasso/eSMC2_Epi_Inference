@@ -94,7 +94,7 @@ plt.show()
 
 np.random.seed(123)  # Reproducibility
 
-# Initial state priors
+# Initial state/parameter priors
 # 'VariableName': {
 #     'prior': <distribution object>,  # specifies the prior distribution for the variable
 #     'transf': <transformation>       # specifies if/how the variable should be transformed (none, log, logit)
