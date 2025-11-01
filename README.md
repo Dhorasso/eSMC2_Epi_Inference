@@ -36,7 +36,7 @@ cd eSMC2_Epi_Inference
 import numpy as np
 import pandas as pd
 from scipy.stats import truncnorm, uniform, norm
-from smc2 import ESMC_squared  # your implementation
+from smc2 import ESMC_squared  
 ```
 ##### Load your data
 
@@ -157,8 +157,7 @@ ci_levels = [50, 75, 90, 95]  # CI levels to plot
 mean_color ='blue'
 ci_color = 'gray'       
 window = 1                    # smoothing window
-show_params = True            # whether to plot parameters
-simulated_data['Rt'] = simulated_data['beta_t']/true_theta[1] # true reprod. number ( the eff. reprod numer is 
+show_params = True            # whether to plot parameterssimulated_data['Rt'] = simulated_data['beta_t']/true_theta[1] # true reprod. number ( the eff. reprod numer is 
                                                                                 # obtain by mutiply by density os susceptible)
 
 # --- Trace trajectories ---
