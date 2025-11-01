@@ -82,7 +82,7 @@ plt.show()
 ```
 
 <p>
-  <img src="Fig/sim_data1.png" alt="Plot showing the simulated data" width="800">
+  <img src="Fig/sim_data1.png" alt="Plot showing the simulated data" width="600">
 </p>
 #####  Run the eSMC²
 
