@@ -2,7 +2,7 @@
 
 This repository contains the implementation of the **Ensemble SMC² (eSMC²)** algorithm for sequential Bayesian inference in state-space epidemiological models, as described in our paper:
 
-"Accelerated Bayesian inference for state-space epidemiological models with Ensemble SMC²"
+"**Accelerated Bayesian inference for state-space epidemiological models with Ensemble SMC²**"
 
 ---
 
