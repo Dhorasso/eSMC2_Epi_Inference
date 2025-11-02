@@ -60,7 +60,6 @@ ax1.scatter(simulated_data['time'], simulated_data['obs'], color='dodgerblue', e
 ax1.set_xlabel('Days', fontsize=16)
 ax1.set_ylabel('Daily incidence', color='dodgerblue', fontsize=16)
 ax1.tick_params(axis='y', labelcolor='dodgerblue', labelsize=14)
-# Increase x-axis tick label size
 ax1.tick_params(axis='x', labelsize=14) 
 
 ax1.grid(True, alpha=0.3)
