@@ -97,26 +97,27 @@ plt.show()
 
 np.random.seed(123)  # Reproducibility
 
-# Initial state/parameter priors
+# Initial state priors
 # 'VariableName': {
 #     'prior': <distribution object>,  # specifies the prior distribution for the variable
 #     'transf': <transformation>       # specifies if/how the variable should be transformed (none, log, logit)
 # }
 
 state_info = {
-    'S':  {'prior': truncnorm((0 - (500000-10))/0.2, (500000 - (500000-10))/0.2, loc=500000-10, scale=0.2), 'transf': 'none'},
-    'E':  {'prior': uniform(0, 0), 'transf': 'none'},
-    'I':  {'prior': truncnorm((0 - 10)/0.2, (np.inf - 10)/0.2, loc=10, scale=0.2), 'transf': 'none'},
-    'R':  {'prior': uniform(0, 0), 'transf': 'none'},
-    'Z': {'prior': uniform(0, 0), 'transf': 'none'},
-    'B':  {'prior': truncnorm((0 - 0.3)/0.01, (np.inf - 0.3)/0.01, loc=0.3, scale=0.01), 'transf': 'log'},
+    'S': {'prior': truncnorm((0-(500000-10))/0.2, (np.inf-(500000-10))/0.2, loc=500000-10, scale=0.2), 'transf': 'none'},
+    'E': {'prior': uniform(loc=0, scale=100), 'transf': 'none'},
+    'I': {'prior': truncnorm((0-10)/0.2, (np.inf-10)/0.2, loc=10, scale=0.2), 'transf': 'none'},
+    'R': {'prior': uniform(loc=0, scale=0), 'transf': 'none'},
+    'Z': {'prior': uniform(loc=0, scale=0), 'transf': 'none'},
+    'B': {'prior': truncnorm((0-0.3)/0.01, (np.inf-0.3)/0.01, loc=0.3, scale=0.01), 'transf': 'log'},
 }
+
 
 # Parameter priors
 theta_info = {
-    'alpha':   {'prior': truncnorm((0 - 0.6)/0.3, (np.inf - 0.6)/0.3, loc=0.6, scale=0.3), 'transf': 'log'},
-    'gamma':   {'prior': truncnorm((0 - 0.2)/0.1, (np.inf - 0.2)/0.1, loc=0.2, scale=0.1), 'transf': 'log'},
-    'nu_beta': {'prior': uniform(0, 0.5), 'transf': 'log'},
+    'alpha': {'prior': truncnorm((0-0.6)/0.3, (np.inf-0.6)/0.3, loc=0.6, scale=0.3), 'transf': 'log'},
+    'gamma': {'prior': truncnorm((0-0.2)/0.1, (np.inf-0.2)/0.1, loc=0.2, scale=0.1), 'transf': 'log'},
+    'nu_beta': {'prior': uniform(loc=0, scale=0.5), 'transf': 'log'},
 }
 
 # theta_info = {
@@ -140,6 +141,7 @@ esmc2_results = ESMC_squared(
 
 # Print the Marginal log-likelihood
 print("Marginal log-likelihood:", esmc2_results['margLogLike'])
+
 ```
 
 ##### Visualization
@@ -189,7 +191,7 @@ axs[1].set_ylabel(r'Transmission rate $\beta_t$', fontsize=18)
 axs[1].tick_params(labelsize=14)
 axs[1].set_ylim([-0.05, 1])
 
-# Effective reproduction number
+# Reproduction number
 plot_smc(matrix_state['Rt'], ax=axs[2], mean_color=mean_color, ci_color=ci_color, label='eSMC²', window=window, ci_levels=ci_levels)
 axs[2].plot(simulated_data['time'], simulated_data['Rt'], color='orange', linestyle='--', lw=4, label='Ground truth')
 axs[2].axhline(1, color='r', linestyle='--', lw=2)
