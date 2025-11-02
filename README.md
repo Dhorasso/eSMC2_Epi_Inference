@@ -47,7 +47,7 @@ from smc2 import ESMC_squared
 #####################################################################################
 
 # Load data generated previously (columns: time, obs, beta_t)
-true_theta = [1/2, 1/7]  # sigma, gamma
+true_theta = [1/2, 1/7]  # alpha, gamma
 simulated_data = pd.read_csv("simulated_data1.csv")
 
 ## Visulation
