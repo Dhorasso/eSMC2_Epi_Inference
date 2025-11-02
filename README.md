@@ -105,7 +105,7 @@ np.random.seed(123)  # Reproducibility
 
 state_info = {
     'S': {'prior': truncnorm((0-(500000-10))/0.2, (np.inf-(500000-10))/0.2, loc=500000-10, scale=0.2), 'transf': 'none'},
-    'E': {'prior': uniform(loc=0, scale=100), 'transf': 'none'},
+    'E': {'prior': uniform(loc=0, scale=0), 'transf': 'none'},
     'I': {'prior': truncnorm((0-10)/0.2, (np.inf-10)/0.2, loc=10, scale=0.2), 'transf': 'none'},
     'R': {'prior': uniform(loc=0, scale=0), 'transf': 'none'},
     'Z': {'prior': uniform(loc=0, scale=0), 'transf': 'none'},
