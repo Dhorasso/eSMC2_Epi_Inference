@@ -14,6 +14,13 @@ This repository contains the implementation of the **Ensemble SMC² (eSMC²)** a
 
 ---
 
+## State-space model
+
+<p>
+  <img src="Fig/ssm.png" alt="Plot showing the state-space model" width="700">
+</p>
+
+
 ## Installation
 Clone the repository:
 
