@@ -52,6 +52,10 @@ from smc2 import ESMC_squared
 #####################################################################################
 # STEP 1: Load pre-simulated data
 #####################################################################################
+import matplotlib as mpl
+# --- Setup for LaTeX-style font rendering ---
+mpl.rcParams['text.usetex'] = False  # Set to True only if you have LaTeX installed
+mpl.rcParams['mathtext.fontset'] = 'cm'  # Use Computer Modern for mathtext
 
 # Load data generated previously (columns: time, obs, beta_t)
 true_theta = [1/2, 1/7]  # alpha, gamma
