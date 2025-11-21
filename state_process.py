@@ -59,7 +59,7 @@ def Forecast_step(
 
     alpha = get_param("alpha", 1.0)
     gamma = get_param("gamma", 1.0)
-    phi = get_param("phi", 1e-5)
+    phi = get_param("phi", 1e-10)
     rho = get_param("rho", 1.0)
     nu_beta = get_param("nu_beta", 0.15)
 
@@ -158,7 +158,7 @@ def Update_step(
     y_pred = y_pred.reshape(N, 1)
 
     y_mean = float(np.mean(y_pred))
-    V_t = max(0.1, y_mean * (1 + phi * y_mean))
+    V_t  = max(0.1, np.mean(y_pred + phi * y_pred**2))
 
     y_obs = obs + np.random.normal(0.0, np.sqrt(V_t), size=(N, 1))
 
