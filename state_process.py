@@ -46,7 +46,7 @@ def Forecast_step(
     x: np.ndarray,
     theta: np.ndarray,
     theta_names: list[str],
-    dt: float,
+    dt = 1,
     forecast: bool = False
 ) -> np.ndarray:
     """
