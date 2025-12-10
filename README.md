@@ -1,8 +1,12 @@
-# eSMC²: Ensemble SMC² for Epidemiological Models
+# eSMC²: Efficient Sequential Bayesian Inference for Epidemic Models
 
-This repository contains the implementation of the **Ensemble SMC² (eSMC²)** algorithm for sequential Bayesian inference in state-space epidemiological models, as described in our paper:
+This repository contains the implementation of the **Ensemble SMC² (eSMC²)** algorithm for efficient sequential Bayesian inference in state-space epidemic models. 
 
-"**Accelerated Bayesian inference for state-space epidemiological models with Ensemble SMC²**"
+The methodology is described in our paper:
+
+**"Efficient sequential Bayesian inference for state-space epidemic models using ensemble data assimilation"**  
+[arXiv:2512.05650](https://arxiv.org/pdf/2512.05650v1)
+
 
 ---
 
