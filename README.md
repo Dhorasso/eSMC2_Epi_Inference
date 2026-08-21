@@ -4,8 +4,8 @@ This repository contains the implementation of the **Ensemble SMC² (eSMC²)** a
 
 The methodology is described in our paper:
 
-**"Efficient sequential Bayesian inference for state-space epidemic models using ensemble data assimilation"**  [Paper]([https://arxiv.org/pdf/2512.05650v1](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014301))
-
+**Efficient sequential Bayesian inference for state-space epidemic models using ensemble data assimilation**  
+[Read the article](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014301)
 
 ---
 
